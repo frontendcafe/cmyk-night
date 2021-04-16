@@ -1,10 +1,10 @@
 import React from "react";
 import "./style/TopBar.css";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function App() {
+function TopBar() {
   return (
     <nav className="wrapper">
       <ul className="flex-container">
@@ -13,7 +13,7 @@ export default function App() {
         </li>
         <li>
           <button>
-            <FontAwesomeIcon icon={faSearch} />
+            {/* <FontAwesomeIcon icon={faSearch} /> */}
           </button>
           <input placeholder="Buscar Eventos"></input>
         </li>
@@ -22,7 +22,7 @@ export default function App() {
             <span hidden className="menu">
               Menú
             </span>
-            <FontAwesomeIcon className="menu-icon" icon={faBars} />
+            {/* <FontAwesomeIcon className="menu-icon" icon={faBars} /> */}
           </button>
         </li>
         <li>
