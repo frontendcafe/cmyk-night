@@ -1,32 +1,34 @@
 import React from "react";
 import "./style/TopBar.css";
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+
 
 function TopBar() {
   return (
     <nav className="wrapper">
       <ul className="flex-container">
         <li>
-          <h1>NIGHT</h1>
+          <Link to="/"><h1>NIGHT</h1></Link>
         </li>
         <li>
-          <button>
-            {/* <FontAwesomeIcon icon={faSearch} /> */}
-          </button>
+          <Link to="/users">
+              <FontAwesomeIcon icon={faSearch} />
+          </Link>
           <input placeholder="Buscar Eventos"></input>
         </li>
         <li>
-          <button>
+          <a href="#">
             <span hidden className="menu">
               Menú
             </span>
-            {/* <FontAwesomeIcon className="menu-icon" icon={faBars} /> */}
-          </button>
+            <FontAwesomeIcon className="menu-icon" icon={faBars} />
+          </a>
         </li>
         <li>
-          <button>Iniciar Sesión</button>
+          <Link to="/about"><span>Iniciar Sesión</span></Link>
         </li>
       </ul>
     </nav>
