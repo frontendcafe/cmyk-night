@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -6,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 
+import MainCard from "./components/MainCard";
 export default function App() {
   return (
     <Router>
@@ -43,7 +45,7 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return <MainCard></MainCard>;
 }
 
 function About() {
