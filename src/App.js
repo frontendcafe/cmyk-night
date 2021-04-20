@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
+import Topbar from "./components/TopBar";
 import MainCard from "./components/MainCard";
 import imgp from "./components/img/imgPrueba.jpg"
 
@@ -14,22 +14,7 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        <Topbar />
         <Switch>
           <Route path="/about">
             <About />
@@ -38,13 +23,14 @@ export default function App() {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
+            <MainCard />
           </Route>
         </Switch>
       </div>
     </Router>
   );
 }
+
 
 function Home() {
   return <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>;
