@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 
 import MainCard from "./components/MainCard";
+import imgp from "./components/img/imgPrueba.jpg"
+
 export default function App() {
   return (
     <Router>
@@ -45,7 +47,7 @@ export default function App() {
 }
 
 function Home() {
-  return <MainCard></MainCard>;
+  return <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>;
 }
 
 function About() {

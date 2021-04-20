@@ -1,16 +1,15 @@
 import React from "react";
 import "./style/MainCard.css";
-import imgp from './img/imgPrueba.jpg';
 
-function MainCard(){
+function MainCard({date, title, performer, banner_image}){
     return(
             <div className="contenedor_mc">
                 <div className="contenedor_txt">
-                    <p>23 -24 -25 de Mayo</p>
-                    <h1>SEREMOS PRIMAVERA</h1>
-                    <p>Eruca Sativa</p>
+                    <p>{date}</p>
+                    <h1>{title.toUpperCase()}</h1>
+                    <p>{performer}</p>
                 </div>
-                <img className="contenedor_img" src={imgp}/>
+                <img className="contenedor_img" src={banner_image} alt="imagen banner"/>
             </div>
     )
 }
