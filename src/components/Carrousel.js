@@ -6,43 +6,44 @@ import { ReactComponent as ArrowRight } from "./icons/ArrowRight.svg";
 
 import "./style/Carrousel.css";
 
-function Carrousel({ LabelText, Cards }) {
+const MOVE = 240;
+
+function Carrousel({ labelText, cards }) {
     const CardContainer = useRef();
 
-    const MOVE = 240;
     const maxScrollLeft = CardContainer.current?.scrollWidth - CardContainer.current?.clientWidth;
 
-    const [Left, setLeft] = useState(0);
+    const [left, setLeft] = useState(0);
 
     const handleClickLeft = () => {
-        if (Left - MOVE < 0) {
+        if (left - MOVE < 0) {
             setLeft(0);
             return
         }
-        setLeft(Left - MOVE);
+        setLeft(left - MOVE);
     }
 
     const handleClickRight = () => {
-        if (Left + MOVE > maxScrollLeft) {
+        if (left + MOVE > maxScrollLeft) {
             setLeft(maxScrollLeft);
             return
         }
-        setLeft(Left + MOVE);
+        setLeft(left + MOVE);
     }
 
     useEffect(() => {
-        CardContainer.current.scrollLeft = Left;
-    }, [Left])
+        CardContainer.current.scrollLeft = left;
+    }, [left])
 
     return (
         <>
-                    <p className="topText">{LabelText}</p>
+            <p className="topText">{labelText}</p>
             <div className="container">
                 <button className="container__buttons" onClick={handleClickLeft}>
                     <ArrowLeft />
                 </button>
                 <div className="container__cards" ref={CardContainer}>
-                    {Cards.map(({ name, imageSrc }) => (
+                    {cards.map(({ name, imageSrc }) => (
                         <Card name={name} imageSrc={imageSrc} />
                     )) }
                     </div>
