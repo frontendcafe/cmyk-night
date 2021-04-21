@@ -1,16 +1,17 @@
-.container_picture {
+.container__picture {
     height: 256px;
     width: 213px;
 }
 
-.container_image {
+.container__image {
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px;
     margin-left: 3px;
 }
 
-.container_text {
+.container__text {
     margin-top: 20px;
     margin-bottom: 22px;
     color: #757575;
@@ -18,7 +19,7 @@
     font-weight: 400;
 }
 
-.container_stars {
+.container__stars {
     display: flex;
     margin-left: 1px;
     list-style: none;
