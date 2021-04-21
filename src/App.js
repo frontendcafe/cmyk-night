@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Topbar from "./components/TopBar";
 import MainCard from "./components/MainCard";
+import EventDetails from "./pages/EventDetails"
 
 export default function App() {
   return (
@@ -18,8 +19,8 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/events/:eventId">
+            <EventDetails />
           </Route>
           <Route path="/">
             <MainCard />
