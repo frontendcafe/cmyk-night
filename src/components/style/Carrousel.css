@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    gap: 53px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.topText {
+    color: #757575;
+    font-size: 18px;
+    margin-left: 10%;
+}
+
+.container__buttons {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container__cards {
+    margin-top: 32px;
+    display: flex;
+    overflow-x: auto;
+    gap: 28px;
+}
+
+@media screen and (min-width: 769px) {
+    .container__cards {
+        overflow-x: hidden;
+    }
+    .container__buttons{
+        display: block;
+    }
+  }
