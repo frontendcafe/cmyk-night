@@ -4,11 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Topbar from "./components/TopBar";
-import MainCard from "./components/MainCard";
 import EventDetails from "./pages/EventDetails"
+
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -23,7 +23,7 @@ export default function App() {
             <EventDetails />
           </Route>
           <Route path="/">
-            <MainCard />
+            <Home />
           </Route>
         </Switch>
       </div>

@@ -25,11 +25,20 @@
     gap: 28px;
 }
 
-@media screen and (min-width: 769px) {
+.carrouselContainer{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 720px) {
     .container__cards {
         overflow-x: hidden;
     }
     .container__buttons{
         display: block;
+    }
+    .carrouselContainer{
+        margin-top: 52px;
+        margin-bottom: 52px;
     }
   }
