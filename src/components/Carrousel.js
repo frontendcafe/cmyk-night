@@ -36,7 +36,7 @@ function Carrousel({ labelText, cards }) {
     }, [left])
 
     return (
-        <>
+        <div className="carrouselContainer">
             <p className="topText">{labelText}</p>
             <div className="container">
                 <button className="container__buttons" onClick={handleClickLeft}>
@@ -44,14 +44,14 @@ function Carrousel({ labelText, cards }) {
                 </button>
                 <div className="container__cards" ref={CardContainer}>
                     {cards.map(({ name, imageSrc }) => (
-                        <Card name={name} imageSrc={imageSrc} />
+                        <Card key={name} name={name} imageSrc={imageSrc} />
                     )) }
                     </div>
                 <button className="container__buttons" onClick={handleClickRight}>
                     <ArrowRight />
                 </button>
             </div>
-        </>
+        </div>
     )
 }
 
