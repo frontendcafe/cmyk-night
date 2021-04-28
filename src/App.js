@@ -6,9 +6,9 @@ import {
   Route,
 } from "react-router-dom";
 import Topbar from "./components/TopBar";
-import EventDetails from "./pages/EventDetails"
-
 import Home from "./pages/Home";
+import EventDetails from "./pages/EventDetails"
+import Checkout from "./pages/Checkout";
 
 export default function App() {
   return (
@@ -21,6 +21,9 @@ export default function App() {
           </Route>
           <Route path="/events/:eventId">
             <EventDetails />
+          </Route>
+          <Route path="/checkout/:eventId">
+            <Checkout />
           </Route>
           <Route path="/">
             <Home />

@@ -28,6 +28,7 @@ const Home = () => {
             carouselData: {
                 labelText: "Proximos",
                 cards: [{
+                    id: 1,
                     name: "The dance Belly",
                     imageSrc: "https://picsum.photos/200/300"
                 }]
@@ -38,6 +39,7 @@ const Home = () => {
             carouselData: {
                 labelText: "Musica",
                 cards: [{
+                    id: 2,
                     name: "Lorem imsum lorem ipsum",
                     imageSrc: "https://picsum.photos/300/500"
                 }]
