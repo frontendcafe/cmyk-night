@@ -4,38 +4,23 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
+import Topbar from "./components/TopBar";
+import EventDetails from "./pages/EventDetails"
 
-import MainCard from "./components/MainCard";
-import imgp from "./components/img/imgPrueba.jpg"
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        <Topbar />
         <Switch>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/events/:eventId">
+            <EventDetails />
           </Route>
           <Route path="/">
             <Home />
@@ -46,8 +31,8 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>;
+function home() {
+  return <h2>Home</h2>;
 }
 
 function About() {

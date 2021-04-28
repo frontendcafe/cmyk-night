@@ -1,0 +1,26 @@
+.Tabcontainer{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.container__containerButton {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 100%;
+    border-bottom: 2px solid white ;
+}
+
+.container__button{
+    height: 100%;
+    width: 100%;
+    color: #757575;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2px solid #3b9860 ;
+}

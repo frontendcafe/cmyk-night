@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.datesContainer {
+  padding: 16px;
+}
+
+.List-days {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.hours-container h4 {
+  font-size: 28px;
+  color: rgba(117, 117, 117, 1);
+  font-weight: normal;
+}
+
+.List-hours {
+  margin-top: 8px;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.days-button {
+  border: none;
+  background-color: inherit;
+  color: rgba(117, 117, 117, 1);
+  height: 98px;
+  font-size: 28px;
+}
+
+.days-button:hover {
+  transform: scale(1.1);
+}
+.days-button:disabled {
+  opacity: 0.5;
+  transform: none;
+}
+.days-button:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(59, 152, 96, 1);
+}
+
+.hours-button {
+  background-color: white;
+  border: 2px solid rgba(59, 152, 96, 1);
+  color: rgba(59, 152, 96, 1);
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-size: 15px;
+}
+
+.hours-button:disabled {
+  border-color: rgba(117, 117, 117, 1);
+  color: rgba(117, 117, 117, 1);
+}
+
+.hours-button:hover {
+  background-color: rgba(59, 152, 96, 1);
+  color: white;
+}
+
+.hours-button:focus {
+  outline: none;
+  background-color: rgba(59, 152, 96, 1);
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .datesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
