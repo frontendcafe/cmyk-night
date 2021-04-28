@@ -3,6 +3,9 @@ import MainCard from "../components/MainCard";
 import Tabs from "../components/Tabs";
 import Carrousel from "../components/Carrousel";
 
+import imgp from "../components/img/imgPrueba.jpg"
+
+
 const InitialValue = {
     labelText: "Loading",
     cards: [
@@ -59,7 +62,7 @@ const Home = () => {
     return (
         <>
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
-            <MainCard />
+            <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
             <Carrousel labelText={activeData.labelText} cards={activeData.cards}  />
         </>
     )
