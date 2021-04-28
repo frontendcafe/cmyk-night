@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { ReactComponent as Star } from "./icons/star.svg";
 import "./style/Card.css"
 
-function Card({ imageSrc, name, rate }) {
+function Card({ id, imageSrc, name, rate }) {
     return (
         <div>
             <div className="container__picture">
+              <Link to={`/events/${id}`}>
                 <img className="container__image" src={imageSrc} alt={name} />
+              </Link>
             </div>
             <p className="container__text">{name}</p>
             <ul className="container__stars">
