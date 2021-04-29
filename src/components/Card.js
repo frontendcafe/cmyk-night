@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { ReactComponent as Star } from "./icons/star.svg";
+import StarList from "./StarList";
 import "./style/Card.css"
 
 function Card({ id, imageSrc, name, rate }) {
@@ -12,20 +13,7 @@ function Card({ id, imageSrc, name, rate }) {
               </Link>
             </div>
             <p className="container__text">{name}</p>
-            <ul className="container__stars">
-                <li>
-                    <Star />
-                </li>
-                <li>
-                    <Star />
-                </li>
-                <li>
-                    <Star />
-                </li>
-                <li>
-                    <Star />
-                </li>
-            </ul>
+            <StarList />
         </div>
     )
 }
