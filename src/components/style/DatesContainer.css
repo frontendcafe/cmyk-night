@@ -12,6 +12,7 @@
 .List-days {
   list-style: none;
   display: flex;
+  justify-content: space-around;
   gap: 16px;
   margin-bottom: 8px;
 }
@@ -25,6 +26,7 @@
 .List-hours {
   margin-top: 8px;
   list-style: none;
+  justify-content: space-around;
   display: flex;
   gap: 16px;
 }
