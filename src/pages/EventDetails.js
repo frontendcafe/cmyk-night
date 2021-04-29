@@ -8,7 +8,7 @@ export default () => {
   const { eventId } = useParams()
   const mock = [{day: 1, enabled: true, hours: [{from: '2:00'}, {from: '3:00'}]}]
   return <div>
-     <MainCard />
+     <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={"https://picsum.photos/200/120"}></MainCard>
     event: {eventId}
     <DatesContainer dates={mock}/>
     <Link to={`/checkout/${eventId}`}>Reservar</Link>
