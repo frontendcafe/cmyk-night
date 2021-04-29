@@ -43,3 +43,38 @@
     font-size: 20px;
 }
 
+@media (max-width: 1920px) and (min-width:900px){
+    .fhl_container{
+        width: 60%;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+
+    }
+    .l_container{
+        font-size: 36px;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        
+    }
+
+    .fh_container{
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .fec{
+        flex-direction: row;
+        font-size: 64px;
+        align-items: flex-end;
+        
+    }
+
+    .fec #m{
+        font-size: 48px;
+        margin-right: 16px;
+    }
+
+    #h{
+        margin-left: 24px;
+    }
+}

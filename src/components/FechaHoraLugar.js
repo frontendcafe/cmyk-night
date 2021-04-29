@@ -7,7 +7,7 @@ function FechaHoraLugar(){
     return(
             <div className="fhl_container">
                 <div className="l_container">
-                    <p>Lolla Palooza 2020 2da edicion</p>
+                    <p>FEC Stadium </p>
                 </div>
                 <div className= "fh_container">
                     <div className="fec">
