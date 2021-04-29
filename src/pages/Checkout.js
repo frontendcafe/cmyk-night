@@ -8,6 +8,6 @@ export default () => {
     <div>
     Checkout {eventId}
   </div>
-  <FechaHoraLugar></FechaHoraLugar>
+  <FechaHoraLugar ></FechaHoraLugar>
   </>
 }

@@ -16,8 +16,6 @@ function FechaHoraLugar(){
                     </div>
                     <p id="h"> 5:00 pm</p>
                 </div>
-                
-                
             </div>
     )
 }
