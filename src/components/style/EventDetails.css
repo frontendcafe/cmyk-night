@@ -1,0 +1,18 @@
+.container__stars {
+    display: flex;
+    margin-left: 1px;
+    list-style: none;
+    gap: 8px;
+}
+
+.description {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 17px;
+}
+
+.description__text {
+    margin-top: 19px;
+    color: #757575;
+    width: 90%;
+}
