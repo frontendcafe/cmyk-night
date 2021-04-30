@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
+    background: white;
 }
 
 .maincard{
@@ -12,6 +12,7 @@
 
 .dates_container{
     width: 80%;
+    margin-bottom: 15vh;
 }
 
 .btn{
@@ -22,21 +23,27 @@
   text-align: center;
   padding: 20px 0;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
-@media (max-width: 1920px) and (min-width:900px){
+@media (max-width: 1920px) and (min-width:720px){
+
+  .ed_container{
+    background: rgba(76,158,109,1) ;
+    background: linear-gradient(180deg, rgba(76,158,109,1) 7%, rgba(147,218,175,1) 40%, rgba(255,255,255,1) 80%);
+  
+  }
   .btn{
     border-radius: 10px;
-    padding: 20px 130px 20px 130px;
+    padding: 10px 130px 10px 130px;
+    width:auto ;
+    margin-bottom: 2vh;
   }
   .maincard{
-    margin-top: 8vh;
-    width: 95%;
+    width: 90%;
+    margin: 5vh 5vh 0vh 5vh;
+   
   }
 }
-@media (max-width: 900px) and (min-width:0){
-  .btn{
-    position: absolute;
-    bottom: 0;
-  }
-}
+
