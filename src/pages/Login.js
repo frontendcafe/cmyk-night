@@ -13,22 +13,24 @@ const Login = () => {
         console.log(formRef)
     }
     return (
-        <main className="LoginCard">
-            <h1 className="LoginCard__title">Iniciar Sesion</h1>
-            <form ref={formRef}>
-                <Input name="Email" />
-                <Input name="Password" />
-                <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
-                <Button className="LoginCard__button"  onClick={handleSubmit}>Iniciar sesion</Button>
-            </form>
-            <div className="LoginCard__lineSeparator">
-                <hr className="LoginCard__line" />
-                o
-                <hr className="LoginCard__line" />
-            </div>
-            <SocialLogin />
-            <div className="LoginCard__ContainerNoAcount">
-                <Link className="LoginCard__NoAcount" to="/signup">¿Aún no tienes cuenta? Registrate</Link>
+        <main className="desktopContainer">
+            <div className="LoginCard">
+                <h1 className="LoginCard__title">Iniciar Sesion</h1>
+                <form ref={formRef}>
+                    <Input name="Email" />
+                    <Input name="Password" />
+                    <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
+                    <Button className="LoginCard__button"  onClick={handleSubmit}>Iniciar sesion</Button>
+                </form>
+                <div className="LoginCard__lineSeparator">
+                    <hr className="LoginCard__line" />
+                    o
+                    <hr className="LoginCard__line" />
+                </div>
+                <SocialLogin />
+                <div className="LoginCard__ContainerNoAcount">
+                    <Link className="LoginCard__NoAcount" to="/signup">¿Aún no tienes cuenta? Registrate</Link>
+                </div>
             </div>
         </main>
     )
