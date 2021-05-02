@@ -19,3 +19,9 @@
     width: 56px;
     height: 56px;
 }
+
+.SocialContainer__button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

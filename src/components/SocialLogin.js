@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { ReactComponent as GoogleIcon } from "./icons/Google.svg";
 import { ReactComponent as FacebookIcon } from "./icons/Facebook.svg";
 import { ReactComponent as TwitterIcon } from "./icons/Twitter.svg";
@@ -11,19 +10,19 @@ const SocialLogin = () => {
             <p className="SocialContainer__title">Puedes ingresar con</p>
             <ul className="SocialContainer__list">
                 <li>
-                    <Link to="/">
+                    <button className="SocialContainer__button">
                         <GoogleIcon className="SocialContainer__icon" />
-                    </Link>
+                    </button>
                 </li>
                 <li>
-                    <Link to="/">
+                    <button className="SocialContainer__button">
                         <FacebookIcon className="SocialContainer__icon" />
-                    </Link>
+                    </button>
                 </li>
                 <li>
-                    <Link to="/">
+                    <button className="SocialContainer__button">
                         <TwitterIcon className="SocialContainer__icon" />
-                    </Link>
+                    </button>
                 </li>
             </ul>
         </div>
