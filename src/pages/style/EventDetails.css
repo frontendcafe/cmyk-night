@@ -1,3 +1,5 @@
+@import "../../components/style/gradient.css";
+
 .ed_container{
     display: flex;
     flex-direction: column;
@@ -30,8 +32,7 @@
 @media (max-width: 1920px) and (min-width:720px){
 
   .ed_container{
-    background: rgba(76,158,109,1) ;
-    background: linear-gradient(180deg, rgba(76,158,109,1) 7%, rgba(147,218,175,1) 40%, rgba(255,255,255,1) 80%);
+    background: var(--main-gradient)
   
   }
   .btn{
