@@ -62,7 +62,6 @@ const Home = () => {
 
     return (
         <>
-            <Avatar location="no tengo que exitir" name="florida" src="https://picsum.photos/50/50" />
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
             <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
             <Carrousel labelText={activeData.labelText} cards={activeData.cards}  />
