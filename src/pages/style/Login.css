@@ -33,3 +33,15 @@
     width: 100%;
     height: 1px;
 }
+
+.LoginCard__ContainerNoAcount{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.LoginCard__NoAcount{
+    font-size: 18px;
+    color: #31AD63;
+    text-align: center;
+    text-decoration: none;
+}
