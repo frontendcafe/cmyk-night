@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Input from "../components/Input";
-import LineSeparator from '../components/LineSeparator';
+import PartingLine from '../components/PartingLine';
 import SocialLogin from "../components/SocialLogin";
 import "./style/Login.css";
 
@@ -23,7 +23,7 @@ const Login = () => {
                     <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
                     <Button className="LoginCard__button"  onClick={handleSubmit}>Iniciar sesion</Button>
                 </form>
-                <LineSeparator />
+                <PartingLine />
                 <SocialLogin />
                 <div className="LoginCard__ContainerNoAcount">
                     <Link className="LoginCard__NoAcount" to="/signup">¿Aún no tienes cuenta? Registrate</Link>
