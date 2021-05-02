@@ -22,21 +22,6 @@
     margin-top: 30px;
 }
 
-.LoginCard__lineSeparator{
-    display: flex;
-    color: #BDBDBD;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 26px;
-}
-
-.LoginCard__line{
-    width: 100%;
-    height: 1px;
-}
-
 .LoginCard__ContainerNoAcount{
     text-align: center;
     margin-top: 70px;
