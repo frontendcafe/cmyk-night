@@ -17,7 +17,7 @@ const Login = () => {
         <main className="desktopContainer">
             <div className="LoginCard">
                 <h1 className="LoginCard__title">Iniciar Sesion</h1>
-                <form ref={formRef}>
+                <form ref={formRef} onSubmit={handleSubmit}>
                     <Input name="Email" />
                     <Input name="Password" />
                     <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
