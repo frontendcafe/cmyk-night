@@ -1,0 +1,33 @@
+.SocialContainer{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.SocialContainer__title{
+    color: #B2AAAA;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.SocialContainer__list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.SocialContainer__icon{
+    width: 56px;
+    height: 56px;
+}
+
+.SocialContainer__ContainerNoAcount{
+    text-align: center;
+}
+
+.SocialContainer__NoAcount{
+    font-size: 18px;
+    color: #31AD63;
+    text-align: center;
+    text-decoration: none;
+}

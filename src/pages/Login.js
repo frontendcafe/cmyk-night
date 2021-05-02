@@ -26,7 +26,10 @@ const Login = () => {
                 o
                 <hr className="LoginCard__line" />
             </div>
-            <SocialLogin />
+            <SocialLogin className="SocialContainer__ContainerNoAcount"/>
+            <div>
+                <Link className="SocialContainer__NoAcount" to="/signup">¿Aún no tienes cuenta? Registrate</Link>
+            </div>
         </main>
     )
 }
