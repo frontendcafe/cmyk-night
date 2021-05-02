@@ -11,17 +11,17 @@ const SocialLogin = () => {
             <p className="SocialContainer__title">Puedes ingresar con</p>
             <ul className="SocialContainer__list">
                 <li>
-                    <Link>
+                    <Link to="/">
                         <GoogleIcon className="SocialContainer__icon" />
                     </Link>
                 </li>
                 <li>
-                    <Link>
+                    <Link to="/">
                         <FacebookIcon className="SocialContainer__icon" />
                     </Link>
                 </li>
                 <li>
-                    <Link>
+                    <Link to="/">
                         <TwitterIcon className="SocialContainer__icon" />
                     </Link>
                 </li>

@@ -10,7 +10,7 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formRef)
+        console.log(formRef.current)
     }
     return (
         <main className="desktopContainer">
