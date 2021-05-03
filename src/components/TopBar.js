@@ -28,7 +28,7 @@ function TopBar() {
           </a>
         </li>
         <li>
-          <Link to="/about"><span>Iniciar Sesión</span></Link>
+          <Link to="/login"><span>Iniciar Sesión</span></Link>
         </li>
       </ul>
     </nav>
