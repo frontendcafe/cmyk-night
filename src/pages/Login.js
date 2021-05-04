@@ -11,7 +11,10 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formRef.current)
+        const EmailValue = formRef.current[0].value;
+        const PasswordValue = formRef.current[1].value;
+        console.log({EmailValue});
+        console.log({PasswordValue});
     }
     return (
         <main className="desktopContainer">

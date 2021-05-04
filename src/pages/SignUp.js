@@ -10,7 +10,12 @@ const SignUp = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formRef.current)
+        const EmailValue = formRef.current[0].value;
+        const PasswordValue = formRef.current[1].value;
+        const ConfirmPasswordValue = formRef.current[2].value;
+        console.log({EmailValue});
+        console.log({PasswordValue});
+        console.log({ConfirmPasswordValue});
     }
 
     return (
