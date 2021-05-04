@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import Input from "../components/Input";
 import PartingLine from '../components/PartingLine';
 import SocialLogin from "../components/SocialLogin";
-import "./style/Login&SignUp.css";
+import "./style/LoginAndSignUp.css";
 
 const Login = () => {
     const formRef = useRef(null);
@@ -22,7 +22,7 @@ const Login = () => {
                 <h1 className="LoginCard__title">Iniciar Sesion</h1>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <Input name="Email" />
-                    <Input name="Contraseña" password />
+                    <Input name="Contraseña" type="password" />
                     <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
                     <Button className="LoginCard__button"  onClick={handleSubmit}>Iniciar sesion</Button>
                 </form>

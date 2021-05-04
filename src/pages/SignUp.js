@@ -3,7 +3,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import PartingLine from "../components/PartingLine";
 import SocialLogin from "../components/SocialLogin";
-import "./style/Login&SignUp.css";
+import "./style/LoginAndSignUp.css";
 
 const SignUp = () => {
     const formRef = useRef(null);
@@ -24,8 +24,8 @@ const SignUp = () => {
                 <h1 className="LoginCard__title">Registro</h1>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <Input name="Email" />
-                    <Input name="Contraseña" newPassword />
-                    <Input name="Confirma Contraseña" newPassword />
+                    <Input name="Contraseña" type="password" />
+                    <Input name="Confirma Contraseña" type="password" />
                     <Button className="LoginCard__button"  onClick={handleSubmit}>Registrarse</Button>
                 </form>
                 <PartingLine />
