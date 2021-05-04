@@ -19,8 +19,8 @@ const SignUp = () => {
                 <h1 className="LoginCard__title">Registro</h1>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <Input name="Email" />
-                    <Input name="Contraseña" />
-                    <Input name="Confirma Contraseña" />
+                    <Input name="Contraseña" password />
+                    <Input name="Confirma Contraseña" password />
                     <Button className="LoginCard__button"  onClick={handleSubmit}>Registrarse</Button>
                 </form>
                 <PartingLine />

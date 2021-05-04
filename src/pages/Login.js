@@ -19,7 +19,7 @@ const Login = () => {
                 <h1 className="LoginCard__title">Iniciar Sesion</h1>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <Input name="Email" />
-                    <Input name="Contraseña" />
+                    <Input name="Contraseña" password />
                     <Link className="LoginCard__forgotPassword" to="/">¿Olvidate tu contraseña?</Link>
                     <Button className="LoginCard__button"  onClick={handleSubmit}>Iniciar sesion</Button>
                 </form>
