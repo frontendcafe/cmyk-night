@@ -25,9 +25,30 @@ export default function EventDetail() {
   }, [eventId])
 
 
-  const mock = [{day: 24, enabled: true, hours: [{from: '2:00'}, {from: '3:00'}]},
-              {day: 25, enabled: true, hours: [{from: '3:00'}, {from: '4:00'}]},
-              {day: 26, enabled: true, hours: [{from: '3:00'}, {from: '5:00'}]}]
+  const mock = [
+    {
+      day: 24, 
+      enabled: true, 
+      hours: [{ from: "16:00", enabled:  true  },
+              { from: "18:00", enabled:  false  }
+            ]
+    },
+    {
+      day: 25, 
+      enabled: false, 
+      hours: [{ from: "16:00", enabled:  true  },
+              { from: "18:00", enabled:  false  }
+            ]
+    },
+    {
+      day: 27, 
+      enabled: true, 
+      hours: [{ from: "16:00", enabled:  true  },
+              { from: "18:00", enabled:  false  }
+            ]
+    },
+    
+  ]
 
 
 
