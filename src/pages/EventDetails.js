@@ -54,7 +54,7 @@ export default function EventDetail() {
     }
 
     <div className= "dates_container">
-      <DatesContainer  dates={mock}/>
+      <DatesContainer  dates={mock} location={eventData.title}/>
     </div>
     <Link to={`/checkout/${eventId}`} className={'btn'}>Reservar</Link>
 

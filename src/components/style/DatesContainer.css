@@ -65,7 +65,7 @@
   color: rgba(117, 117, 117, 1);
 }
 
-.hours-button:hover {
+.hours-button:hover:enabled {
   background-color: rgba(59, 152, 96, 1);
   color: white;
 }

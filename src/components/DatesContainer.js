@@ -20,13 +20,13 @@ function DaysContainer({ dates, handleCurrentDay }) {
     );
   }
   
-  function HoursContainer({ currentDay }) {
+  function HoursContainer({ currentDay, location }) {
     if(!currentDay){
         return null
     }
     return (
       <div className="hours-container">
-      <h4>LOCATION</h4>
+      <h4>{location}</h4>
       <ul className="List List-hours">
         {currentDay.hours.map((hour) => {
           return (
@@ -40,7 +40,7 @@ function DaysContainer({ dates, handleCurrentDay }) {
     );
   }
   
-  export default function DatesContainer({ dates }) {
+  export default function DatesContainer({ dates,location }) {
     const [currentDay, setCurrentDay] = React.useState(null);
   
     function handleCurrentDay(day) {
@@ -50,7 +50,7 @@ function DaysContainer({ dates, handleCurrentDay }) {
     return (
       <div className="datesContainer">
         <DaysContainer dates={dates} handleCurrentDay={handleCurrentDay} />
-        <HoursContainer currentDay={currentDay} />
+        <HoursContainer currentDay={currentDay} location={location}/>
       </div>
     );
   }
