@@ -24,3 +24,9 @@
 .active{
     border-bottom: 2px solid #3b9860 ;
 }
+
+@media (min-width: 720px) {
+    .active{
+        border-bottom: 4px solid #3b9860 ;
+    }   
+}

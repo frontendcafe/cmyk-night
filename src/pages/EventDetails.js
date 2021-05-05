@@ -32,7 +32,7 @@ export default function EventDetail() {
         </div>
     
     }
-
+  <p className="titulo_aux">FECHAS DISPONIBLES:</p>
     <div className= "dates_container">
       <DatesContainer  dates={mock}/>
     </div>

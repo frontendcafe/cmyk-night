@@ -4,6 +4,8 @@ import Tabs from "../components/Tabs";
 import Carrousel from "../components/Carrousel";
 import { getEvents } from '../services/eventService';
 import Loading from '../components/Loading';
+import "./style/Home.css";
+
 
 import imgp from "../components/img/imgPrueba.jpg"
 
@@ -36,11 +38,11 @@ const Home = () => {
     if(loading) return <Loading/>
 
     return (
-        <>
+        <div className= "home_container">
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
             <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
             <Carrousel labelText={activeTab} cards={activeData.filter(event=> event.type === activeTab)} />
-        </>
+        </div>
     )
 }
 
