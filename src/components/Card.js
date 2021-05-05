@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { ReactComponent as Star } from "./icons/star.svg";
 import StarList from "./StarList";
 import "./style/Card.css"
 

@@ -4,7 +4,7 @@ import './style/Loading.css'
 
 const Loading = () => (
   <div className="spinner">
-    <img src={loading}/>
+    <img src={loading} alt="Loading"/>
   </div>
 );
 

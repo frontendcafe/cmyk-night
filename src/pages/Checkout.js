@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import FechaHoraLugar from '../components/FechaHoraLugar';
 
-export default () => {
+const Checkout = () => {
   const { eventId } = useParams()
   return <>
     <div>
@@ -11,3 +11,5 @@ export default () => {
   <FechaHoraLugar ></FechaHoraLugar>
   </>
 }
+
+export default Checkout;
