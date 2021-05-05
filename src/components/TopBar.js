@@ -20,15 +20,17 @@ function TopBar() {
           <input placeholder="Buscar Eventos"></input>
         </li>
         <li>
-          <a href="#">
+          <Link to="/about">
             <span hidden className="menu">
               Menú
             </span>
-            <FontAwesomeIcon className="menu-icon" icon={faBars} />
-          </a>
+          </Link>
+          <FontAwesomeIcon className="menu-icon" icon={faBars} />
         </li>
         <li>
+
           <Link to="/login"><span>Iniciar Sesión</span></Link>
+
         </li>
       </ul>
     </nav>
