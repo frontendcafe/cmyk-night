@@ -5,11 +5,12 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-function PersonCard({photo,name,gitlink,lilink}){
+function PersonCard({photo,name,rol,gitlink,lilink}){
     return(
             <div className="pc_container">
                <img className="circle" src={photo}/>
                <p className="name">{name.toUpperCase()}</p>
+               <p className="rol">{rol}</p>
                <div className="contact">
                     <a href={gitlink} className="icon">
                         <FontAwesomeIcon icon={faGithub} ></FontAwesomeIcon>

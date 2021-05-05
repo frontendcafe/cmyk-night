@@ -32,9 +32,7 @@
     width: 100%;
     background-color: #3B9860;
     color: white;
-    position: fixed;
-    bottom: 0;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;

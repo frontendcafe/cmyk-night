@@ -18,8 +18,16 @@
 .name{
     font-size: 7vw;
     letter-spacing: 1vw;
-    margin-bottom: 4vw;
+    color: #353131;
+    margin-bottom: 1vw;
 
+}
+
+.rol{
+    font-size: 5vw;
+    margin-bottom: 4vw;
+    font-style: italic;
+    color: #757575;
 }
 
 .contact{
@@ -49,8 +57,12 @@
         font-weight: bolder;
         letter-spacing: 0.2vw;
         text-align: center;
+    }
+
+    .rol{
+        font-size: 1.2vw;
         margin-bottom: 2vw;
-        color: #757575;
+
     }
 
     .icon{
