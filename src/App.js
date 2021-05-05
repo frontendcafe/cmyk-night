@@ -39,18 +39,3 @@ export default function App() {
     </Router>
   );
 }
-
-
-
-function home() {
-  return <h2>Home</h2>;
-}
-
-function about() {
-
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
