@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function PersonCard({photo,name,rol,gitlink,lilink}){
     return(
             <div className="pc_container">
-               <img className="circle" src={photo}/>
+               <img className="circle" src={photo} alt={name}/>
                <p className="name">{name.toUpperCase()}</p>
                <p className="rol">{rol}</p>
                <div className="contact">
@@ -18,7 +18,7 @@ function PersonCard({photo,name,rol,gitlink,lilink}){
                     <a href={lilink} className="icon">
                         <FontAwesomeIcon icon={faLinkedin} ></FontAwesomeIcon>
                     </a>
-               </div>     
+               </div>
             </div>
     )
 }
