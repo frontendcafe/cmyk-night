@@ -7,9 +7,11 @@ import {
 } from "react-router-dom";
 import Topbar from "./components/TopBar";
 import Home from "./pages/Home";
-import EventDetails from "./pages/EventDetails"
+import EventDetails from "./pages/EventDetails";
 import Checkout from "./pages/Checkout";
+import About from "./pages/AboutUs";
 import Login from "./pages/Login";
+
 
 export default function App() {
   return (
@@ -36,13 +38,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

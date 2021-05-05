@@ -21,14 +21,16 @@ function TopBar() {
         </li>
         <li>
           <a href="#">
-            <span hidden className="menu">
+          <Link to="/about"><span hidden className="menu">
               Menú
-            </span>
+            </span></Link>
             <FontAwesomeIcon className="menu-icon" icon={faBars} />
           </a>
         </li>
         <li>
+
           <Link to="/login"><span>Iniciar Sesión</span></Link>
+
         </li>
       </ul>
     </nav>
