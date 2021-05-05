@@ -43,8 +43,8 @@ function Carrousel({ labelText, cards }) {
                     <ArrowLeft />
                 </button>
                 <div className="container__cards" ref={CardContainer}>
-                    {cards.map(({ id, name, avatar }) => (
-                        <Card id={id} key={id} name={name} imageSrc={avatar} />
+                    {cards.map(({ id, title, avatar }) => (
+                        <Card id={id} key={id} name={title} imageSrc={avatar} />
                     )) }
                     </div>
                 <button className="container__buttons" onClick={handleClickRight}>
