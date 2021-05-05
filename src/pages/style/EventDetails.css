@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+.titulo_aux{
+  display: none;
+}
+
 .dates_container{
     width: 80%;
     margin-bottom: 15vh;
@@ -21,7 +25,7 @@
   background-color: #3B9860;
   color: white;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 7vw;
   text-align: center;
   padding: 20px 0;
   width: 100%;
@@ -36,15 +40,26 @@
   
   }
   .btn{
-    border-radius: 10px;
-    padding: 10px 130px 10px 130px;
-    width:auto ;
-    margin-bottom: 2vh;
+    width: 90%;
+    padding: 10px 70px 10px 70px;
+    font-size: 2vw;
+    margin-bottom: 1vh;
+   
   }
   .maincard{
     width: 90%;
     margin: 5vh 5vh 0vh 5vh;
-   
+  }
+
+  .titulo_aux{
+    display:block;
+    margin-top: 3vh;
+    font-size: 1.2vw;
+    letter-spacing: 2vh;
+    font-weight: bolder;
+    color: #3B9860;
+    width: 90%;
+    padding-left: 1vw;
   }
 }
 
