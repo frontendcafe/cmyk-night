@@ -41,7 +41,7 @@ const ProfileData = [
                         },
 ]
 
-export default () => {
+const AboutUs = () => {
   return <div className="about_container">
 
     <div className="title">
@@ -66,3 +66,5 @@ export default () => {
     </div>
   </div>
 }
+
+export default AboutUs;
