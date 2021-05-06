@@ -42,6 +42,9 @@ const Home = () => {
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
             <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
             <Carrousel labelText={activeTab} cards={activeData.filter(event=> event.type === activeTab)} />
+            <div className="footer">
+                <p>CMYK 3.0 - Frontend Café</p>
+            </div>
         </div>
     )
 }
