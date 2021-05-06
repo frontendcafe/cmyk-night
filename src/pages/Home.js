@@ -5,7 +5,8 @@ import Carrousel from "../components/Carrousel";
 import { getEvents } from '../services/eventService';
 import Loading from '../components/Loading';
 
-import imgp from "../components/img/imgPrueba.jpg"
+import imgp from "../components/img/imgPrueba.jpg";
+import Avatar from "../components/Avatar";
 
 const InitialValue = {
     labelText: "Loading",
