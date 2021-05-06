@@ -19,7 +19,7 @@ function DaysContainer({ dates, handleCurrentDay }) {
       </ul>
     );
   }
-  
+
   function HoursContainer({ currentDay }) {
     if(!currentDay){
         return null
@@ -31,7 +31,7 @@ function DaysContainer({ dates, handleCurrentDay }) {
         {currentDay.hours.map((hour) => {
           return (
             <li key={hour.from}>
-              <button className="hours-button" disabled={!hour.enabled}>{hour.from}</button>
+              <button className="hours-button">{hour.from}</button>
             </li>
           );
         })}
