@@ -1,0 +1,40 @@
+.check_container{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check_header{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+
+}
+
+.check_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    width: 40%;
+    justify-content: center;
+}
+
+.check_form p{
+    font-size: 2vw;
+    margin-bottom: 2vh;
+    color: #3B9860;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    
+    .check_form{
+        
+        margin-top: 5vh;
+        width: 90%;
+    }
+
+    .check_form p{
+        font-size: 7vw;
+    }
+}
