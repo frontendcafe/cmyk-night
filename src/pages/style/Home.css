@@ -1,0 +1,27 @@
+.home_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../components/img/fondo.jpg");
+}
+
+
+.maincard{
+    width: 100%;
+}
+
+.Tabcontainer{
+    width: 100%;
+}
+
+.carrouselContainer{
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+    
+    .contenedor_mc{
+        width: 95%
+    }
+}

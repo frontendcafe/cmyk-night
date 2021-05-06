@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-image: url("../../components/img/fondo.jpg");
 }
 
 .title{

@@ -62,7 +62,7 @@ const AboutUs = () => {
     </div>
 
     <div className="footer">
-        <p>FRONTEND CAFE</p>
+        <p>CMYK 3.0 - Frontend Café</p>
     </div>
   </div>
 }

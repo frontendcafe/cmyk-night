@@ -22,7 +22,7 @@ function TopBar() {
         <li>
           <Link to="/about">
             <span hidden className="menu">
-              Menú
+              About Us
             </span>
           </Link>
           <FontAwesomeIcon className="menu-icon" icon={faBars} />
