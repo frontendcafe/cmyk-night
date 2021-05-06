@@ -4,8 +4,11 @@ import Tabs from "../components/Tabs";
 import Carrousel from "../components/Carrousel";
 import { getEvents } from '../services/eventService';
 import Loading from '../components/Loading';
+import "./style/Home.css";
 
-import imgp from "../components/img/imgPrueba.jpg"
+
+import imgp from "../components/img/imgPrueba.jpg";
+import Avatar from "../components/Avatar";
 
 const InitialValue = {
     labelText: "Loading",
@@ -36,11 +39,14 @@ const Home = () => {
     if(loading) return <Loading/>
 
     return (
-        <>
+        <div className= "home_container">
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
             <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
             <Carrousel labelText={activeTab} cards={activeData.filter(event=> event.type === activeTab)} />
-        </>
+            <div className="footer">
+                <p>CMYK 3.0 - Frontend Café</p>
+            </div>
+        </div>
     )
 }
 

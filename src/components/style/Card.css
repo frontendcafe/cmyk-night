@@ -1,6 +1,6 @@
 .container__picture {
-    height: 256px;
-    width: 213px;
+    height: 22vh;
+    width: 30vw;
 }
 
 .container__image {
@@ -15,6 +15,13 @@
     margin-top: 20px;
     margin-bottom: 22px;
     color: #757575;
-    font-size: 13px;
+    font-size: 2.3vh;
     font-weight: 400;
+}
+
+@media screen and (min-width: 720px) {
+    .container__picture {
+        height: 256px;
+        width: 213px;
+    }
 }
