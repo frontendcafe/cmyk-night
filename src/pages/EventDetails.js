@@ -8,12 +8,14 @@ import StarList from "../components/StarList"
 import "../components/style/EventDetails.css"
 import  {getEventsDetails } from "../services/eventService"
 import Loading from '../components/Loading';
-
+import dayjs from 'dayjs'
 
 export default function EventDetail() {
   const { eventId } = useParams()
   const [eventData, setEventData] = React.useState()
   const [loading,setLoading] = React.useState(true);
+
+
 
   React.useEffect(() => {
     getEventsDetails(eventId)
@@ -54,18 +56,24 @@ export default function EventDetail() {
 
 
   const screenWidth = window.screen.width;
+  console.log(screenWidth)
   if(loading){
     return <Loading/>
   }
   return <div className="ed_container">
     {screenWidth >= 720 ?
       <div className="maincard"> 
-        <DescriptionCard title={eventData.title} location="Eruca Sativa" description={eventData.description} banner_image={eventData.avatar} />
+        <DescriptionCard title={eventData.title} location={eventData.locationId} description={eventData.description} banner_image={eventData.avatar} />
       </div>
       :
      
         <div className="maincard">
-          <MainCard date={"1-2-3 Marzo"} title={eventData.title} performer={eventData.performer.firstName} banner_image={eventData.avatar}></MainCard>
+          <MainCard 
+            date={dayjs(eventData.socialEventSchedule[0].schedule.datetime).format('DD-MMM')} 
+            title={eventData.title} 
+            performer={eventData.performer.firstName+" "+ eventData.performer.lastName} 
+            banner_image={eventData.avatar}>
+          </MainCard>
           <div className="description">
             <StarList />
             <p className="description__text">{eventData.description}</p>

@@ -37,9 +37,19 @@ const Home = () => {
 
     return (
         <>
-            <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
-            <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
-            <Carrousel labelText={activeTab} cards={activeData.filter(event=> event.type === activeTab)} />
+            <Tabs 
+                activeTab={activeTab} 
+                tabs={tabs} 
+                setActiveTab={handleActiveTab} />
+            <MainCard 
+                date={"24 enero"} 
+                title={activeData[0].title} 
+                performer={activeData[0].performer.firstName +" "+ activeData[0].performer.lastName } banner_image={imgp}>
+            </MainCard>
+            <Carrousel 
+                labelText={activeTab} 
+                cards={activeData.filter(event=> event.type === activeTab)} 
+            />
         </>
     )
 }
