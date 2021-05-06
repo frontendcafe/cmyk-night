@@ -11,6 +11,7 @@ import EventDetails from "./pages/EventDetails";
 import Checkout from "./pages/Checkout";
 import About from "./pages/AboutUs";
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 
 export default function App() {
@@ -30,6 +31,9 @@ export default function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
           </Route>
           <Route path="/">
             <Home />
