@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import MainCard from "../components/MainCard";
 import Tabs from "../components/Tabs";
 import Carrousel from "../components/Carrousel";
+import { getEvents } from '../services/eventService';
+import Loading from '../components/Loading';
 
 import imgp from "../components/img/imgPrueba.jpg"
-
 
 const InitialValue = {
     labelText: "Loading",
@@ -16,54 +17,29 @@ const InitialValue = {
     ]
 }
 
-const InitialActiveTab = "Online";
-
 const Home = () => {
-    const [activeTab, setActiveTab] = useState(InitialActiveTab);
+    const tabs = ['Online', 'Offline'];
+    const [activeTab, setActiveTab] = useState('Online');
     const [activeData, setActiveData] = useState(InitialValue);
+    const [loading, setLoading] = useState(true)
 
     const handleActiveTab = (tab) => setActiveTab(tab);
 
-    //This data would come from the API
-    const Data = [
-        {
-            name: "Online",
-            carouselData: {
-                labelText: "Proximos",
-                cards: [{
-                    id: 1,
-                    name: "The dance Belly",
-                    imageSrc: "https://picsum.photos/200/300"
-                }]
-            }
-        },
-        {
-            name: "Presenciales",
-            carouselData: {
-                labelText: "Musica",
-                cards: [{
-                    id: 2,
-                    name: "Lorem imsum lorem ipsum",
-                    imageSrc: "https://picsum.photos/300/500"
-                }]
-            }
-        }
-    ]
-
-    const tabs = Data.map((value) => value.name);
-
     useEffect(() => {
-        const currentData = Data.filter((value) => value.name === activeTab)
-        const carrouselData = currentData.map(value => value.carouselData);
-        setActiveData(carrouselData[0]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [activeTab])
+      getEvents()
+        .then(data => {
+          setActiveData(data)
+          setLoading(false)
+        })
+    }, [])
+
+    if(loading) return <Loading/>
 
     return (
         <>
             <Tabs activeTab={activeTab} tabs={tabs} setActiveTab={handleActiveTab} />
             <MainCard date={"24 enero"} title={"seremos primavera"} performer={"Eruca Sativa"} banner_image={imgp}></MainCard>
-            <Carrousel labelText={activeData.labelText} cards={activeData.cards}  />
+            <Carrousel labelText={activeTab} cards={activeData.filter(event=> event.type === activeTab)} />
         </>
     )
 }
