@@ -8,7 +8,6 @@ import "./style/Home.css";
 
 
 import imgp from "../components/img/imgPrueba.jpg";
-import Avatar from "../components/Avatar";
 
 const InitialValue = {
     labelText: "Loading",
