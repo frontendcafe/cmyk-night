@@ -3,7 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-image: url("../../components/img/fondo.jpg");
 }
+
 
 .maincard{
     width: 100%;
