@@ -6,13 +6,13 @@ import "./style/Checkout.css"
 import Input from "../components/Input";
 
 
-const Checkout = () => {
+const Checkout = ({src, eventName, location, day, numberDay,hour}) => {
 
   return <div className="check_container">
 
     <div className="check_header">
-      <Avatar src="https://picsum.photos/200" name="SEREMOS PRIMAVERA"></Avatar>
-      <FechaHoraLugar ></FechaHoraLugar>
+      <Avatar src={src} name={eventName}></Avatar>
+      <FechaHoraLugar location={location} day={day} numberDay={numberDay} hour={hour} ></FechaHoraLugar>
     </div>
 
     <div className= "check_form">
