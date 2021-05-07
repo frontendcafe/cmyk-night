@@ -16,6 +16,15 @@ export default function EventDetail() {
               {day: 26, enabled: true, hours: [{from: '3:00'}, {from: '5:00'}]}]
 
   const screenWidth = window.screen.width;
+
+  const eventData = { src: "https://picsum.photos/200",
+                      name:"Pappo Blues",
+                      location:"FEC Stadium",
+                      day:"Mon",
+                      numberDay:"25",
+                      hour:"7:00"
+  }
+
   return <div className="ed_container">
     {screenWidth >= 720 ?
       <div className="maincard"> 
@@ -36,7 +45,7 @@ export default function EventDetail() {
     <div className= "dates_container">
       <DatesContainer  dates={mock}/>
     </div>
-    <Link to={`/checkout/${eventId}`} className={'btn'}>Reservar</Link>
+    <Link to={`/checkout/${eventId}?src=${eventData.src}&name=${eventData.name}&location=${eventData.location}&day=${eventData.day}&numberDay=${eventData.numberDay}&hour=${eventData.hour}`} className={'btn'}>Reservar</Link>
 
   </div>
 }

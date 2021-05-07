@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
 import Topbar from "./components/TopBar";
 import Home from "./pages/Home";
 import EventDetails from "./pages/EventDetails";
