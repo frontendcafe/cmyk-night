@@ -3,18 +3,21 @@ import "./style/FechaHoraLugar.css";
 
 //Solo maquetado del componente
 
-function FechaHoraLugar(){
+function FechaHoraLugar({location,day,numberDay,hour}){
     return(
             <div className="fhl_container">
                 <div className="l_container">
-                    <p>FEC Stadium </p>
+                    <p>{location} </p>
                 </div>
                 <div className= "fh_container">
                     <div className="fec">
-                        <p id="m">Mon</p>
-                        <p>24</p>
+                        <p id="m">{day}</p>
+                        <p>{numberDay}</p>
                     </div>
-                    <p id="h"> 5:00 pm</p>
+                    <div>
+                        <p id="h">{hour}</p>
+                    </div>
+                    
                 </div>
             </div>
     )
