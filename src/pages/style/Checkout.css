@@ -7,14 +7,16 @@
 .check_header{
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 90%;
+    padding-right: 0;
+    justify-content:left;
 
 }
 
 .check_form{
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 3vh;
     width: 40%;
     justify-content: center;
 }
@@ -25,6 +27,14 @@
     color: #3B9860;
     font-weight: bold;
 }
+
+.left_side{
+    width: 50%;
+}
+.right_side{
+    width: 100%;
+}
+
 
 @media (max-width: 720px) {
     
@@ -37,4 +47,13 @@
     .check_form p{
         font-size: 7vw;
     }
+    .left_side{
+        width: 50%;
+    }
+
+    .right_side{
+        width: 50%;   
+    }
+
+    
 }

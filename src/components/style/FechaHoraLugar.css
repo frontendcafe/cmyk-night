@@ -1,5 +1,5 @@
 .fhl_container{
-    width: 50%;
+
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -30,7 +30,7 @@
     border-radius: 10px;
     font-size: 15px;
     line-height: 32px;;
-    padding: 0px 2vw 0px 2vw;
+    padding: 0px 20px 0px 20px;
 }
 
 .fec{
@@ -46,8 +46,11 @@
 
 @media (max-width: 1920px) and (min-width:900px){
     .fhl_container{
-        width: 60%;
+        width: 100%;
         flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: flex-end;
 
     }

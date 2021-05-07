@@ -1,0 +1,25 @@
+.drop_select{
+    margin-top: 2vh;
+    margin-left: 4.3vw;
+    color:black;
+    background: linear-gradient(90deg, rgba(224,235,222,1) 82%, rgba(59,152,96,1) 82%);
+    padding: 0.4vw 1vw;
+
+}
+
+.drop_value{
+    background-color: rgb(233, 230, 230);
+    color: black;
+}
+
+@media (max-width: 720px) {
+    .drop_select{
+        margin-top: 3.3vh;
+        font-size:5vw;
+        margin-left: 0vw;
+    }
+
+    .drop_value{
+        font-size: 4vw;
+    }
+}

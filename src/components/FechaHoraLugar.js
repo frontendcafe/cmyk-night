@@ -14,7 +14,10 @@ function FechaHoraLugar({location,day,numberDay,hour}){
                         <p id="m">{day}</p>
                         <p>{numberDay}</p>
                     </div>
-                    <p id="h">{hour}</p>
+                    <div>
+                        <p id="h">{hour}</p>
+                    </div>
+                    
                 </div>
             </div>
     )

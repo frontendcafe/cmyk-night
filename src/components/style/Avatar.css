@@ -36,5 +36,21 @@
     .AvatarContainer{
         justify-content: initial;
         gap: 13px;
+        
     }
+
+    .AvatarContainer__icon{
+        margin-bottom: -0.5vh;
+    }
+
+  }
+
+  @media screen and (max-width: 720px) {
+    .AvatarContainer{
+        align-items: center;
+        margin-top: 3vh;
+        height: 5vh;
+    }
+
+
   }
