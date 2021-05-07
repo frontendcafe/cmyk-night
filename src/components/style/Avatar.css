@@ -1,7 +1,7 @@
 .AvatarContainer{
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: left;
     color: #757575;
     height: 15vh;
     margin-right: 2vw;
@@ -50,6 +50,8 @@
         align-items: center;
         margin-top: 3vh;
         height: 5vh;
+        color: black;
+        font-weight: bold;
     }
 
 

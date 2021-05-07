@@ -15,11 +15,13 @@
 @media (max-width: 720px) {
     .drop_select{
         margin-top: 3.3vh;
-        font-size:5vw;
+        font-size:3vh;
         margin-left: 0vw;
     }
 
     .drop_value{
-        font-size: 4vw;
+        font-size: 2vh;
+        margin: 0;
+        padding: 1vh;
     }
 }
