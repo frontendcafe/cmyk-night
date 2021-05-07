@@ -13,11 +13,11 @@ const Checkout = ({src, eventName, location, day, numberDay,hour}) => {
 
     <div className="check_header">
       <div className="left_side">
-        <Avatar src={"https://picsum.photos/200"} name={"Seremos primavera"}></Avatar>
+        <Avatar src={src} name={eventName}></Avatar>
         <Dropdown></Dropdown>
       </div>
       <div className="right_side">
-        <FechaHoraLugar location={"Fec Stadium"} day={"Mon"} numberDay={"24"} hour={"5:00"} ></FechaHoraLugar>
+        <FechaHoraLugar location={location} day={day} numberDay={numberDay} hour={hour} ></FechaHoraLugar>
       </div>
       
     </div>
