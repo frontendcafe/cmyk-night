@@ -19,9 +19,20 @@
     width: 100%;
 }
 
+
 @media (min-width: 720px) {
     
     .contenedor_mc{
         width: 95%
+    }
+    
+}
+
+@media (max-width: 720px) {
+    
+    
+    .footer{
+        position: fixed;
+        bottom: 0;
     }
 }

@@ -24,7 +24,7 @@ const Checkout = () => {
 
     <div className="check_header">
       <div className="left_side">
-        <Avatar src={src} name={name}></Avatar>
+        <Avatar src={src} name={name.toUpperCase()}></Avatar>
         <Dropdown></Dropdown>
       </div>
       <div className="right_side">

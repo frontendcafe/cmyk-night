@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/TopBar.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -24,8 +24,11 @@ function TopBar() {
             <span hidden className="menu">
               About Us
             </span>
-          </Link>
-          <FontAwesomeIcon className="menu-icon" icon={faBars} />
+          </Link >
+          <Link to="/about">
+            <FontAwesomeIcon className="menu-icon" icon={faUserFriends} />
+          </Link >
+          
         </li>
         <li>
 
